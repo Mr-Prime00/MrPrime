@@ -1,0 +1,55 @@
+/*-----------------Utilites-------------*/
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    
+}
+.container2{
+    max-width: 1300px;
+    margin: 20px 20px auto;
+    overflow: auto;
+}
+.flex{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    position: relative;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: relative;
+}
+.grid3{
+    grid-template-columns:  1fr 1fr 1fr;
+}
+.card{
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.card:hover{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+.card1:hover{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+.project{
+    background-color:rgb(255, 235, 210);
+}
+.degree{
+    background-color: beige;
+}
+.more{
+    background-color: azure;
+}

@@ -25,7 +25,7 @@ a{
     width: 40px;
 }
 .logo:hover{
-    transform: rotate(10);
+    transform: rotate(10deg);
 }
 .menu-logo{
     height: 25px;
@@ -69,7 +69,7 @@ a{
     
     padding: auto;
     font-size: 48px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lato';
 }
 .bigarea .btn {
     
@@ -85,6 +85,7 @@ a{
     margin-right: 35%;
     overflow: visible;
     transition: all 1s all ease;
+    box-shadow: 1px 3px 2px 1px #333;
 }
 .btn:hover{
     transform: scale(.96);
@@ -104,59 +105,77 @@ a{
     text-align: center;
     transition:  .3s all linear;
 }
+.social-btn:hover{
+    transform: scale(0.95);
+}
+.fa:hover{
+    transform: scale(0.9);
+}
 .bigarea i{
     padding-top: 10px;
 }
 .fa-facebook{
+    color: rgb(78, 184, 233);
+}
+.fa-linkedin{
     color: blue;
 }
-/*------------Showcase-------------*/
-
+.fa-instagram{
+    color: rgb(255, 179, 191);
+}
 .showcase{
-
-    height: 400px;
+    height: 500px;
     margin: 20px 0;
     color: black;
-    padding-left: 30px;
-}
-
-/*-----------------Utilites-------------*/
-
-.container{
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    
-}
-.flex{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 100%;
-}
-.grid{
+    padding: 10px;
     position: relative;
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: relative;
 }
-.grid3{
-    grid-template-columns:  1fr 1fr 1fr;
+.showcase1{
+    height: 410px;
+    margin: 20px 0;
+    color: black;
+    padding: 10px;
+    background-color: #ddd;
+    position: relative;
 }
-.card{
-    background-color: white;
-    color: #000;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    padding: 20px;
-    margin: 10px;
+
+.showcase1::before,
+.showcase1::after {
+  content: '';
+  position: absolute;
+  height: 50px;
+  bottom: -63px;
+  right: 0;
+  left: 0;
+  background-color: #ddd;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
 }
-.card:hover{
-    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+
+.showcase1 form {
+    position: relative;
+    z-index: 100;
+    justify-self: flex-end;
+    overflow: visible;
+    animation: slideInFromRight 1s ease-in;
 }
-.card1:hover{
-    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+
+.showcase1 form .form-control {
+    margin: 30px 10px;
+}
+
+.showcase1 form input[type='text'],
+.showcase1 form input[type='email'],
+.showcase1 form input[type='phone'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase1 form input:focus {
+  outline: none;
 }
